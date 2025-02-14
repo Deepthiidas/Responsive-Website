@@ -1,0 +1,145 @@
+/* General Layout */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8d000; /* Duolingo Yellow */
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #4CAF50; /* Duolingo Green */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero Section */
+#hero {
+    background-color: #f8d000; /* Duolingo Yellow */
+    color: #333;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+/* Kid-Friendly Text */
+.kid-friendly-text {
+    font-family: 'Baloo 2', cursive; /* Google Font for a more playful, kid-friendly look */
+    font-size: 1.5rem;
+    color: #333;
+}
+
+/* Avatar Container */
+#avatar-container {
+    width: 200px; /* Adjust size */
+    height: 200px; /* Adjust size */
+    background-color: #f8d000; /* Same yellow as the background */
+    background-image: url('images/eklavya-new.png'); /* Path to your image */
+    background-size: cover; /* Makes sure the image fills the container */
+    background-position: center; /* Centers the image */
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; /* Optional: Makes the container circular */
+}
+
+/* Call-to-Action Button */
+.cta-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 25px; /* Makes the buttons oval */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+#getStartedButton {
+    background-color: #FF9800; /* Orange color for Get Started */
+}
+#alreadyAccountButton {
+    background-color: #2196F3; /* Blue color for I Have an Account */
+}
+
+.cta-btn:hover {
+    background-color: #45a049;
+}
+#getStartedButton:hover {
+    background-color: #FF5722; /* Darker orange for hover */
+}
+
+#alreadyAccountButton:hover {
+    background-color: #1976D2; /* Darker blue for hover */
+}
+/* Container for additional buttons */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+/* Animation for the avatar */
+#avatar-container {
+    width: 150px;
+    height: 150px;
+    background-image: url('images/eklavya-new.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: waveAnimation 2s infinite; /* Animation applied */
+}
+
+/* Waving animation */
+@keyframes waveAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(10deg); /* Slight tilt */
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+/* Footer */
+footer {
+    background-color: #f8d000;
+    color: black;
+    padding: 1px;
+    text-align: center;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .cta-btn {
+        width: 100%;
+        padding: 20px;
+        font-size: 1.5rem;
+    }
+}
